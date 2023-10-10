@@ -1,0 +1,134 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    /*background-image: linear-gradient(180deg, rgba(89, 76, 238, 1) 0%, #8dd0f5 100%);*/
+    background-image: url('img/day2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+main{
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid;
+    width: 60vh;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 20px;
+    color: #E7E7E7;
+    margin: 15px;
+    /*text-shadow: 1px 1px 1px #00000019;*/
+}
+
+.date{
+    font-size: 15px;
+}
+form input{
+    border: none;
+    border-radius: 15px;
+    padding: 0.8rem;
+}
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 4px 0px #E7E7E7;
+}
+.input-with-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%; /* Ocupar 100% da largura da div */
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+.input-with-icon input[type="text"] {
+    padding-right: 30px; /* Espaço para o botão e o ícone */
+    flex: 1;
+}
+.input-with-icon button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0.8rem 0.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.input-with-icon button i {
+    margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+    font-size: 17px;
+    color: darkgray;
+}
+.name-city{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.name-city h3{
+    font-size: 15px;
+    font-weight: 600;
+}
+.name-city i{
+    font-size: 18px;
+}
+
+.container-date{
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+}
+
+/* date */
+.celcius-degrees{
+    font-size: 70px;
+    font-weight: 900;
+}
+.degrees{
+    font-size: 50px;
+    font-weight: 600;
+    vertical-align: text-bottom;
+}
+.container-date .description{
+    margin: -20px 0px 20px 0px;
+}
+
+/* celcius */
+.celcius{
+    font-size: 39px;
+    font-weight: 600;
+    margin-left: -9px;
+}
+
+/* img */
+.container-img img{
+    height: 90px;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    font-size: 15px;
+}
+
+.icons-speed, .icons-humidity{
+    font-size: 21px;
+}
